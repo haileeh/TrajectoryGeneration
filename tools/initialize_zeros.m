@@ -1,0 +1,15 @@
+t = 0;
+rdot_SVC_INT = [0 0 0]';
+rdot_SVC_TAR = [0 0 0]';
+q_UDP_INT = zeros(4,1); q_SVC_INT = zeros(4,1);
+M_TAR = zeros(3,1); tau_TAR = zeros(3,1);
+omega_dot_TAR_INT = zeros(3,1);
+q_dot_TAR_INT = zeros(4,1);
+Alin = zeros(3,1); Acor = zeros(3,1); Aang = zeros(3,1);
+Acen = zeros(3,1); Atot = zeros(3,1);
+A_TOT = zeros(1,1); A_LIN = zeros(1,1); A_COR = zeros(1,1);
+A_ANG = zeros(1,1); A_CEN = zeros(1,1);
+A_LIN_RATIO = zeros(1,1); A_COR_RATIO = zeros(1,1);
+A_ANG_RATIO = zeros(1,1); A_CEN_RATIO = zeros(1,1);
+DV_angular = zeros(1,1); DV_centripetal = zeros(1,1); DV_linear = zeros(1,1);
+DV_coriolis = zeros(1,1); DV_total = zeros(1,1);
